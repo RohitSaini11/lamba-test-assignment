@@ -1,0 +1,9 @@
+.logo{
+    height: 40px;
+}
+.logotext{
+    transform: scaleY(2);
+    font-size: small;
+    line-height: 20px;
+    background-color: #222222;
+}
