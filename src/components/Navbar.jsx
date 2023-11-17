@@ -36,7 +36,7 @@ return(
                       <Box sx={{display: 'flex', alignItems: 'center', padding: '5px 20px',border:'1px solid #222222',borderLeft:'none',borderRadius: '0px 20px 20px 0px', height:'32px', backgroundColor:'#222222'}}>
                         <SearchIcon size={20} />
                       </Box>
-                      <Box sx={{marginLeft: '20px',backgroundColor:'#272727',padding: '5px 10px',borderRadius: '50px',':hover':{ backgroundColor:'#3D3D3D' }}}>
+                      <Box sx={{marginLeft: '20px',display: 'flex', alignItems: 'center',backgroundColor:'#272727',padding: ' 10px',borderRadius: '50px',':hover':{ backgroundColor:'#3D3D3D' }}}>
                         <FaMicrophone size="18px" />
                       </Box>
                 </Box>
