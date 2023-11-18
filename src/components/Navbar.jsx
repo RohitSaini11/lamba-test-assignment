@@ -10,16 +10,16 @@ return(
         <>
         <Box sx={{display: 'flex', justifyContent:'space-between',height:'60px',padding: '0 1vh'}}>
                 
-                <Box sx={{display: 'flex', alignItems: 'center'}}>
+                <Box sx={{display: 'flex', alignItems: 'center',width:'10%'}}>
                       <Box sx={{ display: 'flex', alignItems: 'center', padding: '10px',borderRadius: '50px',':hover':{ backgroundColor:'#272727',cursor:'pointer' }}}>
                         <ThreeBarsIcon size={20} />
                       </Box>
-                      <Box sx={{display: 'flex', alignItems: 'center' , padding:'24px'}}>
+                      <Box >
                         <img className={styles.logo} src={require('../assets/logo-removebg-preview.png')}  alt='yt-logo' />
                       </Box>
                 </Box>
                 
-                <Box sx={{display: 'flex', alignItems: 'center', height:'60px',padding:'0px 2vmin',width: '42%'}}>
+                <Box sx={{display: 'flex', alignItems: 'center', height:'60px',padding:'0px 2vmin',width: '40%'}}>
                       <TextInput
                             aria-label="Search"
                             name="zipcode"
@@ -47,7 +47,7 @@ return(
                       </Tooltip>
 
                 </Box>
-                <Box sx={{display: 'flex', alignItems: 'center',justifyContent: 'space-between', height:'60px',width: '150px',padding:'0px 2vmin'}}>
+                <Box sx={{display: 'flex', alignItems: 'center',justifyContent: 'space-between', height:'60px',width: '10%',padding:'0px 2vmin'}}>
                   <Tooltip aria-label="Create" direction='s' noDelay>
                     <Box sx={{ display: 'flex', alignItems: 'center', padding: '10px',borderRadius: '50px',':hover':{ backgroundColor:'#272727' }}}>
                         <DeviceCameraVideoIcon size={20} />
