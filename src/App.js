@@ -14,7 +14,7 @@ function App() {
               <Navbar/>
             </SplitPageLayout.Header>
 
-            <SplitPageLayout.Pane  divider='none' width="small" padding="none" >
+            <SplitPageLayout.Pane aria-label='Sidebar' divider='none' width="small" padding="none" >
               <Sidebar/>
             </SplitPageLayout.Pane>
             

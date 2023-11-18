@@ -1,26 +1,38 @@
 import { Box } from "@primer/react";
 import Card from "./Card";
+import { useEffect, useState } from "react";
 
 const Content = () => {
+    const[tabletWidth,SetTabletWidth] = useState(false);
+    const[col,SetCol] = useState('1fr 1fr 1fr');
+
+    useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth <= 768) {
+            SetTabletWidth(true);
+            SetCol('1fr 1fr');
+          } else {
+            SetTabletWidth(false);
+            SetCol('1fr 1fr 1fr');
+          }
+        };
+        
+        window.addEventListener('resize', handleResize);
+    
+        handleResize();
+    
+        console.log(tabletWidth);
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      },[]);
+
+
     return(
         <>
-            {/* <Box 
-                sx={{
-                    border:'1px solid red',
-                    margin:'20px',
-                    height:'100vh',
-                    width:'calc(100% - 30px)',
-                    display:'flex',
-                    flexWrap:'wrap',
-                    gap:'10px'
-                }}
+            <Box 
+                sx={{display: 'grid', gridTemplateColumns:col, gridGap: 1,margin:'20px'}}
             >
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-            </Box> */}
-            <Box sx={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gridGap: 1,margin:'20px'}}>
                 <Card />
                 <Card />
                 <Card />
