@@ -2,9 +2,16 @@
   margin: 0;
   padding: 0;
 }
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #9f9a9a;
+  border-radius: 20px;
+}
 .App{
   background-color: #0F0F0F;
   min-height: 100vh;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }

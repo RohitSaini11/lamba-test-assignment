@@ -8,7 +8,7 @@ const Navbar = () => {
 
 return(
         <>
-        <Box sx={{display: 'flex', justifyContent:'space-between',height:'60px',}}>
+        <Box sx={{display: 'flex', justifyContent:'space-between',height:'60px',padding: '0 1vh'}}>
                 
                 <Box sx={{display: 'flex', alignItems: 'center'}}>
                       <Box sx={{ display: 'flex', alignItems: 'center', padding: '10px',borderRadius: '50px',':hover':{ backgroundColor:'#272727',cursor:'pointer' }}}>
@@ -16,7 +16,6 @@ return(
                       </Box>
                       <Box sx={{display: 'flex', alignItems: 'center' , padding:'24px'}}>
                         <img className={styles.logo} src={require('../assets/logo-removebg-preview.png')}  alt='yt-logo' />
-                        {/* <p className={styles.logotext}>YouTube<sup style={{fontWeight:'normal', fontSize: '10px', padding: '5px'}}>IN</sup></p> */}
                       </Box>
                 </Box>
                 

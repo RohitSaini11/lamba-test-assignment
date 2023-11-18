@@ -1,9 +1,56 @@
 .logo{
     height: 40px;
 }
+
 .logotext{
     transform: scaleY(2);
-    font-size: small;
     line-height: 20px;
     background-color: #222222;
+}
+
+.sideBarList{
+    padding: 10px 0;
+    border-bottom: 1px solid grey;
+}
+
+.sideBarList li{
+    padding:1.5vh;
+    border-radius: 10px;
+    width:85%;
+    display: flex;
+    align-items: center;
+    gap:10%
+}
+
+.sideBarList li:hover{
+    background-color: #272727;
+    cursor: pointer;
+}
+
+.you{
+    align-items: normal !important;
+    gap: 5% !important;
+}
+
+.heading{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1.5vh;
+    margin: 0;
+}
+
+.yt_imgs{
+    height: 24px;
+}
+
+.sideBar_footer_p{
+    display:inline-block;
+    margin-right: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.sideBar_footer_mark{
+    padding: 16px;
+    font-size: 0.8em;
+    color:grey;
 }
