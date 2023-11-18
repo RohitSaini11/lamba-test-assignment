@@ -54,3 +54,22 @@
     font-size: 0.8em;
     color:grey;
 }
+
+.videoTimeDecor::before{
+    content: "•";
+    margin: 0 4px;
+}
+
+.videoTitle{
+    margin:5px 0;
+    color:#f1f1f1;
+    font-weight: 500;
+    cursor: default;
+}
+
+.VideoInfo{
+    font-size: 0.85em;
+    color:#9f9a9a;
+    font-weight:500;
+    cursor: default;
+}

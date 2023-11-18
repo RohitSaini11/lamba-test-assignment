@@ -2,6 +2,7 @@ import './App.css';
 import { Box,SplitPageLayout} from '@primer/react';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import Content from './components/Content';
 
 function App() {
   return (
@@ -14,11 +15,11 @@ function App() {
             </SplitPageLayout.Header>
 
             <SplitPageLayout.Pane  divider='none' width="small" padding="none" >
-                <Sidebar/>
+              <Sidebar/>
             </SplitPageLayout.Pane>
             
-            <SplitPageLayout.Content padding="none">
-              <p>Content</p>
+            <SplitPageLayout.Content width='full' padding="none">
+              <Content />
             </SplitPageLayout.Content>
           
           </SplitPageLayout>
